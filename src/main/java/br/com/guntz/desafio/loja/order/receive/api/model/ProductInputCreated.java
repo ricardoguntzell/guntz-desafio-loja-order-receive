@@ -1,22 +1,21 @@
 package br.com.guntz.desafio.loja.order.receive.api.model;
 
-import br.com.guntz.desafio.loja.order.receive.domain.model.OrderStatus;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotNull;
 
-import java.util.Set;
+import java.math.BigDecimal;
 import java.util.UUID;
 
-public record OrderInputCreated(
+public record ProductInputCreated(
         @NotNull
-        UUID idExternal,
+        UUID id,
 
         @Valid
         @NotNull
-        Set<OrderItemInputCreated> items,
+        String name,
 
         @NotNull
-        OrderStatus orderStatus
+        BigDecimal price
 ) {
 
 }

@@ -12,13 +12,10 @@ import java.util.UUID;
 @Getter
 public class Product {
 
-    @NotNull
     private UUID id;
 
-    @NotNull
     private String name;
 
-    @NotNull
     private BigDecimal price;
 
     @Builder(builderClassName = "BrandNewProductBuilder", builderMethodName = "brandNew")

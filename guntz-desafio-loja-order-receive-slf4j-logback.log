@@ -4262,3 +4262,807 @@ Caused by: java.lang.ClassNotFoundException: br.com.guntz.desafio.loja.order.rec
 25/10/2025 23:48:14 INFO  b.c.g.d.l.o.r.d.s.OrderProducerMessageService - Order 019a1e6a-9abc-74c2-8369-68c0747c4833 CREATED and inserted in exchange: order-processor.order-received-result.v1.e 
 25/10/2025 23:48:36 INFO  o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
 25/10/2025 23:48:36 INFO  o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+26/10/2025 08:30:51 INFO  o.h.v.i.u.Version - HV000001: Hibernate Validator 8.0.3.Final 
+26/10/2025 08:30:51 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - Starting OrderReceiveApplication using Java 17.0.16 with PID 10904 (/home/guntz/dev/projects/spring/desafio/guntz-desafio-loja/microservices/order-receive/target/classes started by guntz in /home/guntz/dev/projects/spring/desafio/guntz-desafio-loja) 
+26/10/2025 08:30:51 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - No active profile set, falling back to 1 default profile: "default" 
+26/10/2025 08:30:52 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+26/10/2025 08:30:52 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+26/10/2025 08:30:53 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http) 
+26/10/2025 08:30:53 INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] 
+26/10/2025 08:30:53 INFO  o.a.c.c.StandardService - Starting service [Tomcat] 
+26/10/2025 08:30:53 INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46] 
+26/10/2025 08:30:53 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+26/10/2025 08:30:53 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1480 ms 
+26/10/2025 08:30:54 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+26/10/2025 08:30:54 INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] 
+26/10/2025 08:30:54 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/' 
+26/10/2025 08:30:54 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - Started OrderReceiveApplication in 2.918 seconds (process running for 3.697) 
+26/10/2025 08:32:51 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+26/10/2025 08:32:51 INFO  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+26/10/2025 08:32:51 INFO  o.s.w.s.DispatcherServlet - Completed initialization in 1 ms 
+26/10/2025 08:32:51 INFO  b.c.g.d.l.o.r.a.c.OrderController - Order accepted: 8bd656be-5f17-4ebb-8096-eb62bef41145 
+26/10/2025 08:32:51 INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672] 
+26/10/2025 08:32:51 INFO  o.s.a.r.c.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#2ce06c7:0/SimpleConnection@47bf1cea [delegate=amqp://rabbitmq@127.0.0.1:5672/, localPort=58432] 
+26/10/2025 08:32:51 INFO  b.c.g.d.l.o.r.d.s.OrderProducerMessageService - Order 019a204a-e9f9-76cb-ad6a-ce53605a2189 CREATED and inserted in exchange: order-processor.order-received-result.v1.e 
+26/10/2025 08:33:29 INFO  b.c.g.d.l.o.r.a.c.OrderController - Order accepted: 61547ea9-cfbc-4aed-8d35-203dd769ff3e 
+26/10/2025 08:33:29 INFO  b.c.g.d.l.o.r.d.s.OrderProducerMessageService - Order 019a204b-7ca7-7d9c-a763-1c67b8f756d1 CREATED and inserted in exchange: order-processor.order-received-result.v1.e 
+26/10/2025 08:33:30 INFO  b.c.g.d.l.o.r.a.c.OrderController - Order accepted: 508fe57a-5693-4555-87ce-b19a6bed9516 
+26/10/2025 08:33:30 INFO  b.c.g.d.l.o.r.d.s.OrderProducerMessageService - Order 019a204b-7fdb-7deb-bcf7-42628cf4f619 CREATED and inserted in exchange: order-processor.order-received-result.v1.e 
+26/10/2025 08:33:31 INFO  b.c.g.d.l.o.r.a.c.OrderController - Order accepted: 40345451-b512-4cd4-a403-6957f9086037 
+26/10/2025 08:33:31 INFO  b.c.g.d.l.o.r.d.s.OrderProducerMessageService - Order 019a204b-836a-76e5-abe1-4c28f04770db CREATED and inserted in exchange: order-processor.order-received-result.v1.e 
+26/10/2025 08:35:07 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications) 
+26/10/2025 08:35:07 INFO  o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+26/10/2025 08:35:07 INFO  o.a.c.h.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"] 
+26/10/2025 08:35:08 INFO  o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+26/10/2025 08:35:08 INFO  o.a.c.h.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"] 
+26/10/2025 08:35:08 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - Starting OrderReceiveApplication using Java 17.0.16 with PID 10904 (/home/guntz/dev/projects/spring/desafio/guntz-desafio-loja/microservices/order-receive/target/classes started by guntz in /home/guntz/dev/projects/spring/desafio/guntz-desafio-loja) 
+26/10/2025 08:35:08 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - No active profile set, falling back to 1 default profile: "default" 
+26/10/2025 08:35:08 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http) 
+26/10/2025 08:35:08 INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] 
+26/10/2025 08:35:08 INFO  o.a.c.c.StandardService - Starting service [Tomcat] 
+26/10/2025 08:35:08 INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46] 
+26/10/2025 08:35:08 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+26/10/2025 08:35:08 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 276 ms 
+26/10/2025 08:35:08 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+26/10/2025 08:35:08 INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] 
+26/10/2025 08:35:08 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/' 
+26/10/2025 08:35:08 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - Started OrderReceiveApplication in 0.51 seconds (process running for 257.951) 
+26/10/2025 08:35:08 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged 
+26/10/2025 08:35:09 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications) 
+26/10/2025 08:35:09 INFO  o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+26/10/2025 08:35:09 INFO  o.a.c.h.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"] 
+26/10/2025 08:35:09 INFO  o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+26/10/2025 08:35:09 INFO  o.a.c.h.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"] 
+26/10/2025 08:35:10 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - Starting OrderReceiveApplication using Java 17.0.16 with PID 10904 (/home/guntz/dev/projects/spring/desafio/guntz-desafio-loja/microservices/order-receive/target/classes started by guntz in /home/guntz/dev/projects/spring/desafio/guntz-desafio-loja) 
+26/10/2025 08:35:10 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - No active profile set, falling back to 1 default profile: "default" 
+26/10/2025 08:35:10 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http) 
+26/10/2025 08:35:10 INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] 
+26/10/2025 08:35:10 INFO  o.a.c.c.StandardService - Starting service [Tomcat] 
+26/10/2025 08:35:10 INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46] 
+26/10/2025 08:35:10 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+26/10/2025 08:35:10 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 190 ms 
+26/10/2025 08:35:10 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+26/10/2025 08:35:10 INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] 
+26/10/2025 08:35:10 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/' 
+26/10/2025 08:35:10 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - Started OrderReceiveApplication in 0.33 seconds (process running for 259.703) 
+26/10/2025 08:35:10 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged 
+26/10/2025 08:36:28 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications) 
+26/10/2025 08:36:28 INFO  o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+26/10/2025 08:36:28 INFO  o.a.c.h.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"] 
+26/10/2025 08:36:28 INFO  o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+26/10/2025 08:36:28 INFO  o.a.c.h.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"] 
+26/10/2025 08:36:28 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - Starting OrderReceiveApplication using Java 17.0.16 with PID 10904 (/home/guntz/dev/projects/spring/desafio/guntz-desafio-loja/microservices/order-receive/target/classes started by guntz in /home/guntz/dev/projects/spring/desafio/guntz-desafio-loja) 
+26/10/2025 08:36:28 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - No active profile set, falling back to 1 default profile: "default" 
+26/10/2025 08:36:29 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http) 
+26/10/2025 08:36:29 INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] 
+26/10/2025 08:36:29 INFO  o.a.c.c.StandardService - Starting service [Tomcat] 
+26/10/2025 08:36:29 INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46] 
+26/10/2025 08:36:29 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+26/10/2025 08:36:29 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 202 ms 
+26/10/2025 08:36:29 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+26/10/2025 08:36:29 INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] 
+26/10/2025 08:36:29 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/' 
+26/10/2025 08:36:29 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - Started OrderReceiveApplication in 0.342 seconds (process running for 338.611) 
+26/10/2025 08:36:29 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged 
+26/10/2025 08:36:30 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications) 
+26/10/2025 08:36:30 INFO  o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+26/10/2025 08:36:30 INFO  o.a.c.h.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"] 
+26/10/2025 08:36:30 INFO  o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+26/10/2025 08:36:30 INFO  o.a.c.h.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"] 
+26/10/2025 08:36:30 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - Starting OrderReceiveApplication using Java 17.0.16 with PID 10904 (/home/guntz/dev/projects/spring/desafio/guntz-desafio-loja/microservices/order-receive/target/classes started by guntz in /home/guntz/dev/projects/spring/desafio/guntz-desafio-loja) 
+26/10/2025 08:36:30 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - No active profile set, falling back to 1 default profile: "default" 
+26/10/2025 08:36:30 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http) 
+26/10/2025 08:36:30 INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] 
+26/10/2025 08:36:30 INFO  o.a.c.c.StandardService - Starting service [Tomcat] 
+26/10/2025 08:36:30 INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46] 
+26/10/2025 08:36:30 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+26/10/2025 08:36:30 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 184 ms 
+26/10/2025 08:36:30 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+26/10/2025 08:36:30 INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] 
+26/10/2025 08:36:30 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/' 
+26/10/2025 08:36:30 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - Started OrderReceiveApplication in 0.313 seconds (process running for 340.342) 
+26/10/2025 08:36:30 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged 
+26/10/2025 08:40:28 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications) 
+26/10/2025 08:40:28 INFO  o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+26/10/2025 08:40:28 INFO  o.a.c.h.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"] 
+26/10/2025 08:40:28 INFO  o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+26/10/2025 08:40:28 INFO  o.a.c.h.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"] 
+26/10/2025 08:40:28 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - Starting OrderReceiveApplication using Java 17.0.16 with PID 10904 (/home/guntz/dev/projects/spring/desafio/guntz-desafio-loja/microservices/order-receive/target/classes started by guntz in /home/guntz/dev/projects/spring/desafio/guntz-desafio-loja) 
+26/10/2025 08:40:28 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - No active profile set, falling back to 1 default profile: "default" 
+26/10/2025 08:40:28 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http) 
+26/10/2025 08:40:28 INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] 
+26/10/2025 08:40:28 INFO  o.a.c.c.StandardService - Starting service [Tomcat] 
+26/10/2025 08:40:28 INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46] 
+26/10/2025 08:40:28 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+26/10/2025 08:40:28 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 156 ms 
+26/10/2025 08:40:28 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+26/10/2025 08:40:28 INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] 
+26/10/2025 08:40:28 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/' 
+26/10/2025 08:40:28 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - Started OrderReceiveApplication in 0.292 seconds (process running for 578.331) 
+26/10/2025 08:40:28 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged 
+26/10/2025 08:42:44 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 2 class path changes (2 additions, 0 deletions, 0 modifications) 
+26/10/2025 08:42:44 INFO  o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+26/10/2025 08:42:44 INFO  o.a.c.h.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"] 
+26/10/2025 08:42:44 INFO  o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+26/10/2025 08:42:44 INFO  o.a.c.h.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"] 
+26/10/2025 08:42:44 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - Starting OrderReceiveApplication using Java 17.0.16 with PID 10904 (/home/guntz/dev/projects/spring/desafio/guntz-desafio-loja/microservices/order-receive/target/classes started by guntz in /home/guntz/dev/projects/spring/desafio/guntz-desafio-loja) 
+26/10/2025 08:42:44 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - No active profile set, falling back to 1 default profile: "default" 
+26/10/2025 08:42:45 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http) 
+26/10/2025 08:42:45 INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] 
+26/10/2025 08:42:45 INFO  o.a.c.c.StandardService - Starting service [Tomcat] 
+26/10/2025 08:42:45 INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46] 
+26/10/2025 08:42:45 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+26/10/2025 08:42:45 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 155 ms 
+26/10/2025 08:42:45 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orderController' defined in file [/home/guntz/dev/projects/spring/desafio/guntz-desafio-loja/microservices/order-receive/target/classes/br/com/guntz/desafio/loja/order/receive/api/controller/OrderController.class]: Unsatisfied dependency expressed through constructor parameter 1: No qualifying bean of type 'br.com.guntz.desafio.loja.order.receive.api.mapper.OrderMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {} 
+26/10/2025 08:42:45 INFO  o.a.c.c.StandardService - Stopping service [Tomcat] 
+26/10/2025 08:42:45 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled. 
+26/10/2025 08:42:45 ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of constructor in br.com.guntz.desafio.loja.order.receive.api.controller.OrderController required a bean of type 'br.com.guntz.desafio.loja.order.receive.api.mapper.OrderMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'br.com.guntz.desafio.loja.order.receive.api.mapper.OrderMapper' in your configuration.
+ 
+26/10/2025 08:43:09 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - Starting OrderReceiveApplication using Java 17.0.16 with PID 10904 (/home/guntz/dev/projects/spring/desafio/guntz-desafio-loja/microservices/order-receive/target/classes started by guntz in /home/guntz/dev/projects/spring/desafio/guntz-desafio-loja) 
+26/10/2025 08:43:09 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - No active profile set, falling back to 1 default profile: "default" 
+26/10/2025 08:43:09 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http) 
+26/10/2025 08:43:09 INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] 
+26/10/2025 08:43:09 INFO  o.a.c.c.StandardService - Starting service [Tomcat] 
+26/10/2025 08:43:09 INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46] 
+26/10/2025 08:43:09 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+26/10/2025 08:43:09 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 172 ms 
+26/10/2025 08:43:09 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orderController' defined in file [/home/guntz/dev/projects/spring/desafio/guntz-desafio-loja/microservices/order-receive/target/classes/br/com/guntz/desafio/loja/order/receive/api/controller/OrderController.class]: Unsatisfied dependency expressed through constructor parameter 1: No qualifying bean of type 'br.com.guntz.desafio.loja.order.receive.api.mapper.OrderMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {} 
+26/10/2025 08:43:09 INFO  o.a.c.c.StandardService - Stopping service [Tomcat] 
+26/10/2025 08:43:09 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled. 
+26/10/2025 08:43:09 ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of constructor in br.com.guntz.desafio.loja.order.receive.api.controller.OrderController required a bean of type 'br.com.guntz.desafio.loja.order.receive.api.mapper.OrderMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'br.com.guntz.desafio.loja.order.receive.api.mapper.OrderMapper' in your configuration.
+ 
+26/10/2025 08:43:38 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - Starting OrderReceiveApplication using Java 17.0.16 with PID 10904 (/home/guntz/dev/projects/spring/desafio/guntz-desafio-loja/microservices/order-receive/target/classes started by guntz in /home/guntz/dev/projects/spring/desafio/guntz-desafio-loja) 
+26/10/2025 08:43:38 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - No active profile set, falling back to 1 default profile: "default" 
+26/10/2025 08:43:38 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http) 
+26/10/2025 08:43:38 INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] 
+26/10/2025 08:43:38 INFO  o.a.c.c.StandardService - Starting service [Tomcat] 
+26/10/2025 08:43:38 INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46] 
+26/10/2025 08:43:38 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+26/10/2025 08:43:38 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 149 ms 
+26/10/2025 08:43:39 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+26/10/2025 08:43:39 INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] 
+26/10/2025 08:43:39 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/' 
+26/10/2025 08:43:39 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - Started OrderReceiveApplication in 0.287 seconds (process running for 768.385) 
+26/10/2025 08:43:39 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged 
+26/10/2025 08:43:40 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications) 
+26/10/2025 08:43:40 INFO  o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+26/10/2025 08:43:40 INFO  o.a.c.h.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"] 
+26/10/2025 08:43:40 INFO  o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+26/10/2025 08:43:40 INFO  o.a.c.h.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"] 
+26/10/2025 08:43:40 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - Starting OrderReceiveApplication using Java 17.0.16 with PID 10904 (/home/guntz/dev/projects/spring/desafio/guntz-desafio-loja/microservices/order-receive/target/classes started by guntz in /home/guntz/dev/projects/spring/desafio/guntz-desafio-loja) 
+26/10/2025 08:43:40 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - No active profile set, falling back to 1 default profile: "default" 
+26/10/2025 08:43:40 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http) 
+26/10/2025 08:43:40 INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] 
+26/10/2025 08:43:40 INFO  o.a.c.c.StandardService - Starting service [Tomcat] 
+26/10/2025 08:43:40 INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46] 
+26/10/2025 08:43:40 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+26/10/2025 08:43:40 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 138 ms 
+26/10/2025 08:43:40 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+26/10/2025 08:43:40 INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] 
+26/10/2025 08:43:40 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/' 
+26/10/2025 08:43:40 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - Started OrderReceiveApplication in 0.265 seconds (process running for 770.078) 
+26/10/2025 08:43:40 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged 
+26/10/2025 08:43:48 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+26/10/2025 08:43:48 INFO  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+26/10/2025 08:43:48 INFO  o.s.w.s.DispatcherServlet - Completed initialization in 1 ms 
+26/10/2025 08:43:48 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.Object> br.com.guntz.desafio.loja.order.receive.api.controller.OrderController.create(br.com.guntz.desafio.loja.order.receive.api.model.OrderInputCreated): [Field error in object 'orderInputCreated' on field 'items[].product.price': rejected value [null]; codes [NotNull.orderInputCreated.items[].product.price,NotNull.orderInputCreated.items.product.price,NotNull.items[].product.price,NotNull.items.product.price,NotNull.price,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [orderInputCreated.items[].product.price,items[].product.price]; arguments []; default message [items[].product.price]]; default message [must not be null]] ] 
+26/10/2025 08:43:55 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.Object> br.com.guntz.desafio.loja.order.receive.api.controller.OrderController.create(br.com.guntz.desafio.loja.order.receive.api.model.OrderInputCreated): [Field error in object 'orderInputCreated' on field 'items[].product.id': rejected value [null]; codes [NotNull.orderInputCreated.items[].product.id,NotNull.orderInputCreated.items.product.id,NotNull.items[].product.id,NotNull.items.product.id,NotNull.id,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [orderInputCreated.items[].product.id,items[].product.id]; arguments []; default message [items[].product.id]]; default message [must not be null]] ] 
+26/10/2025 08:44:04 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.Object> br.com.guntz.desafio.loja.order.receive.api.controller.OrderController.create(br.com.guntz.desafio.loja.order.receive.api.model.OrderInputCreated): [Field error in object 'orderInputCreated' on field 'items[].price': rejected value [null]; codes [NotNull.orderInputCreated.items[].price,NotNull.orderInputCreated.items.price,NotNull.items[].price,NotNull.items.price,NotNull.price,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [orderInputCreated.items[].price,items[].price]; arguments []; default message [items[].price]]; default message [must not be null]] ] 
+26/10/2025 08:44:15 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.Object> br.com.guntz.desafio.loja.order.receive.api.controller.OrderController.create(br.com.guntz.desafio.loja.order.receive.api.model.OrderInputCreated): [Field error in object 'orderInputCreated' on field 'items[].product': rejected value [null]; codes [NotNull.orderInputCreated.items[].product,NotNull.orderInputCreated.items.product,NotNull.items[].product,NotNull.items.product,NotNull.product,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [orderInputCreated.items[].product,items[].product]; arguments []; default message [items[].product]]; default message [must not be null]] ] 
+26/10/2025 08:44:25 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.Object> br.com.guntz.desafio.loja.order.receive.api.controller.OrderController.create(br.com.guntz.desafio.loja.order.receive.api.model.OrderInputCreated): [Field error in object 'orderInputCreated' on field 'items': rejected value [null]; codes [NotNull.orderInputCreated.items,NotNull.items,NotNull.java.util.Set,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [orderInputCreated.items,items]; arguments []; default message [items]]; default message [must not be null]] ] 
+26/10/2025 08:44:29 INFO  b.c.g.d.l.o.r.a.c.OrderController - Order accepted: 2eb2061d-20a2-4bc7-8489-f35bd7317557 
+26/10/2025 08:44:29 INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672] 
+26/10/2025 08:44:29 INFO  o.s.a.r.c.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#45a580fb:0/SimpleConnection@365c0ddf [delegate=amqp://rabbitmq@127.0.0.1:5672/, localPort=55226] 
+26/10/2025 08:44:29 INFO  b.c.g.d.l.o.r.d.s.OrderProducerMessageService - Order 019a2055-9044-701b-85ec-9d5199bfe320 CREATED and inserted in exchange: order-processor.order-received-result.v1.e 
+26/10/2025 08:47:32 INFO  o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+26/10/2025 08:47:32 INFO  o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+26/10/2025 08:47:36 INFO  o.h.v.i.u.Version - HV000001: Hibernate Validator 8.0.3.Final 
+26/10/2025 08:47:36 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - Starting OrderReceiveApplication using Java 17.0.16 with PID 18024 (/home/guntz/dev/projects/spring/desafio/guntz-desafio-loja/microservices/order-receive/target/classes started by guntz in /home/guntz/dev/projects/spring/desafio/guntz-desafio-loja) 
+26/10/2025 08:47:36 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - No active profile set, falling back to 1 default profile: "default" 
+26/10/2025 08:47:36 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+26/10/2025 08:47:36 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+26/10/2025 08:47:37 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http) 
+26/10/2025 08:47:37 INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] 
+26/10/2025 08:47:37 INFO  o.a.c.c.StandardService - Starting service [Tomcat] 
+26/10/2025 08:47:37 INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46] 
+26/10/2025 08:47:37 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+26/10/2025 08:47:37 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1301 ms 
+26/10/2025 08:47:38 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+26/10/2025 08:47:38 INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] 
+26/10/2025 08:47:38 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/' 
+26/10/2025 08:47:38 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - Started OrderReceiveApplication in 2.777 seconds (process running for 3.4) 
+26/10/2025 08:47:52 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+26/10/2025 08:47:52 INFO  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+26/10/2025 08:47:52 INFO  o.s.w.s.DispatcherServlet - Completed initialization in 1 ms 
+26/10/2025 08:47:52 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.Object> br.com.guntz.desafio.loja.order.receive.api.controller.OrderController.create(br.com.guntz.desafio.loja.order.receive.api.model.OrderInputCreated): [Field error in object 'orderInputCreated' on field 'items[].product.price': rejected value [null]; codes [NotNull.orderInputCreated.items[].product.price,NotNull.orderInputCreated.items.product.price,NotNull.items[].product.price,NotNull.items.product.price,NotNull.price,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [orderInputCreated.items[].product.price,items[].product.price]; arguments []; default message [items[].product.price]]; default message [must not be null]] ] 
+26/10/2025 08:47:58 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.Object> br.com.guntz.desafio.loja.order.receive.api.controller.OrderController.create(br.com.guntz.desafio.loja.order.receive.api.model.OrderInputCreated): [Field error in object 'orderInputCreated' on field 'items[].product': rejected value [null]; codes [NotNull.orderInputCreated.items[].product,NotNull.orderInputCreated.items.product,NotNull.items[].product,NotNull.items.product,NotNull.product,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [orderInputCreated.items[].product,items[].product]; arguments []; default message [items[].product]]; default message [must not be null]] ] 
+26/10/2025 08:48:04 INFO  b.c.g.d.l.o.r.a.c.OrderController - Order accepted: c18fc628-27f4-47c3-898a-5b03ae57a508 
+26/10/2025 08:48:04 INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672] 
+26/10/2025 08:48:04 INFO  o.s.a.r.c.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#3e3cf4b6:0/SimpleConnection@30cfb81b [delegate=amqp://rabbitmq@127.0.0.1:5672/, localPort=38648] 
+26/10/2025 08:48:04 INFO  b.c.g.d.l.o.r.d.s.OrderProducerMessageService - Order 019a2058-d676-72ee-9239-5d7f2f99be7a CREATED and inserted in exchange: order-processor.order-received-result.v1.e 
+26/10/2025 08:50:24 INFO  o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+26/10/2025 08:50:24 INFO  o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+26/10/2025 08:51:55 INFO  o.h.v.i.u.Version - HV000001: Hibernate Validator 8.0.3.Final 
+26/10/2025 08:51:55 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - Starting OrderReceiveApplication using Java 17.0.16 with PID 19957 (/home/guntz/dev/projects/spring/desafio/guntz-desafio-loja/microservices/order-receive/target/classes started by guntz in /home/guntz/dev/projects/spring/desafio/guntz-desafio-loja) 
+26/10/2025 08:51:55 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - No active profile set, falling back to 1 default profile: "default" 
+26/10/2025 08:51:55 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+26/10/2025 08:51:55 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+26/10/2025 08:51:57 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http) 
+26/10/2025 08:51:57 INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] 
+26/10/2025 08:51:57 INFO  o.a.c.c.StandardService - Starting service [Tomcat] 
+26/10/2025 08:51:57 INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46] 
+26/10/2025 08:51:57 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+26/10/2025 08:51:57 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2052 ms 
+26/10/2025 08:51:58 WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server 
+26/10/2025 08:51:58 INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] 
+26/10/2025 08:51:58 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/' 
+26/10/2025 08:51:58 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - Started OrderReceiveApplication in 4.155 seconds (process running for 5.257) 
+26/10/2025 08:52:10 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+26/10/2025 08:52:10 INFO  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+26/10/2025 08:52:10 INFO  o.s.w.s.DispatcherServlet - Completed initialization in 1 ms 
+26/10/2025 08:52:11 INFO  b.c.g.d.l.o.r.a.c.OrderController - Order accepted: 650b6417-925f-4bab-922c-e93c67fcac5d 
+26/10/2025 08:52:11 INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672] 
+26/10/2025 08:52:11 INFO  o.s.a.r.c.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#39144305:0/SimpleConnection@3e121018 [delegate=amqp://rabbitmq@127.0.0.1:5672/, localPort=57036] 
+26/10/2025 08:52:11 INFO  b.c.g.d.l.o.r.d.s.OrderProducerMessageService - Order 019a205c-9a7a-75e9-93d3-081dd3726735 CREATED and inserted in exchange: order-processor.order-received-result.v1.e 
+26/10/2025 08:52:11 INFO  b.c.g.d.l.o.r.a.c.OrderController - Order accepted: 15278d87-1eca-4047-9f86-26712cbb3a65 
+26/10/2025 08:52:11 INFO  b.c.g.d.l.o.r.d.s.OrderProducerMessageService - Order 019a205c-9d47-7b87-b33a-b3e57e45bc47 CREATED and inserted in exchange: order-processor.order-received-result.v1.e 
+26/10/2025 08:52:13 INFO  b.c.g.d.l.o.r.a.c.OrderController - Order accepted: cf897559-d8b4-4bc5-bfc7-406341899ecd 
+26/10/2025 08:52:13 INFO  b.c.g.d.l.o.r.d.s.OrderProducerMessageService - Order 019a205c-a3fc-7b91-9c1e-39cfe7c94470 CREATED and inserted in exchange: order-processor.order-received-result.v1.e 
+26/10/2025 08:53:33 INFO  b.c.g.d.l.o.r.a.c.OrderController - Order accepted: 6fd4ada5-8326-475d-a018-7cfc051a290f 
+26/10/2025 08:53:33 INFO  b.c.g.d.l.o.r.d.s.OrderProducerMessageService - Order 019a205d-dcdc-7aea-b1aa-9d7dcb435d3d CREATED and inserted in exchange: order-processor.order-received-result.v1.e 
+26/10/2025 08:53:53 INFO  o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+26/10/2025 08:53:53 INFO  o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+26/10/2025 08:55:26 INFO  o.h.v.i.u.Version - HV000001: Hibernate Validator 8.0.3.Final 
+26/10/2025 08:55:26 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - Starting OrderReceiveApplication using Java 17.0.16 with PID 21649 (/home/guntz/dev/projects/spring/desafio/guntz-desafio-loja/microservices/order-receive/target/classes started by guntz in /home/guntz/dev/projects/spring/desafio/guntz-desafio-loja) 
+26/10/2025 08:55:26 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - No active profile set, falling back to 1 default profile: "default" 
+26/10/2025 08:55:26 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+26/10/2025 08:55:26 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+26/10/2025 08:55:27 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http) 
+26/10/2025 08:55:28 INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] 
+26/10/2025 08:55:28 INFO  o.a.c.c.StandardService - Starting service [Tomcat] 
+26/10/2025 08:55:28 INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46] 
+26/10/2025 08:55:28 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+26/10/2025 08:55:28 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1340 ms 
+26/10/2025 08:55:28 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+26/10/2025 08:55:28 INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] 
+26/10/2025 08:55:28 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/' 
+26/10/2025 08:55:28 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - Started OrderReceiveApplication in 2.698 seconds (process running for 3.384) 
+26/10/2025 08:55:58 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+26/10/2025 08:55:58 INFO  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+26/10/2025 08:55:58 INFO  o.s.w.s.DispatcherServlet - Completed initialization in 1 ms 
+26/10/2025 09:01:30 INFO  o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+26/10/2025 09:01:30 INFO  o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+26/10/2025 09:03:46 INFO  o.h.v.i.u.Version - HV000001: Hibernate Validator 8.0.3.Final 
+26/10/2025 09:03:47 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - Starting OrderReceiveApplication using Java 17.0.16 with PID 25572 (/home/guntz/dev/projects/spring/desafio/guntz-desafio-loja/microservices/order-receive/target/classes started by guntz in /home/guntz/dev/projects/spring/desafio/guntz-desafio-loja) 
+26/10/2025 09:03:47 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - No active profile set, falling back to 1 default profile: "default" 
+26/10/2025 09:03:47 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+26/10/2025 09:03:47 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+26/10/2025 09:03:49 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http) 
+26/10/2025 09:03:49 INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] 
+26/10/2025 09:03:49 INFO  o.a.c.c.StandardService - Starting service [Tomcat] 
+26/10/2025 09:03:49 INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46] 
+26/10/2025 09:03:49 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+26/10/2025 09:03:49 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1968 ms 
+26/10/2025 09:03:50 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+26/10/2025 09:03:50 INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] 
+26/10/2025 09:03:50 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/' 
+26/10/2025 09:03:50 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - Started OrderReceiveApplication in 3.914 seconds (process running for 4.66) 
+26/10/2025 09:08:19 INFO  o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+26/10/2025 09:08:19 INFO  o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+26/10/2025 09:08:22 INFO  o.h.v.i.u.Version - HV000001: Hibernate Validator 8.0.3.Final 
+26/10/2025 09:08:22 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - Starting OrderReceiveApplication using Java 17.0.16 with PID 28265 (/home/guntz/dev/projects/spring/desafio/guntz-desafio-loja/microservices/order-receive/target/classes started by guntz in /home/guntz/dev/projects/spring/desafio/guntz-desafio-loja) 
+26/10/2025 09:08:22 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - No active profile set, falling back to 1 default profile: "default" 
+26/10/2025 09:08:22 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+26/10/2025 09:08:22 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+26/10/2025 09:08:23 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http) 
+26/10/2025 09:08:23 INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] 
+26/10/2025 09:08:23 INFO  o.a.c.c.StandardService - Starting service [Tomcat] 
+26/10/2025 09:08:23 INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46] 
+26/10/2025 09:08:23 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+26/10/2025 09:08:23 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1496 ms 
+26/10/2025 09:08:24 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+26/10/2025 09:08:24 INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] 
+26/10/2025 09:08:24 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/' 
+26/10/2025 09:08:24 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - Started OrderReceiveApplication in 3.263 seconds (process running for 3.912) 
+26/10/2025 09:09:53 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+26/10/2025 09:09:53 INFO  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+26/10/2025 09:09:53 INFO  o.s.w.s.DispatcherServlet - Completed initialization in 1 ms 
+26/10/2025 09:09:53 INFO  b.c.g.d.l.o.r.a.c.OrderController - Order accepted: c243b1df-f437-4215-9686-e77012dbf234 
+26/10/2025 09:09:53 INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672] 
+26/10/2025 09:09:53 INFO  o.s.a.r.c.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#4b1e92de:0/SimpleConnection@71a44c8b [delegate=amqp://rabbitmq@127.0.0.1:5672/, localPort=60384] 
+26/10/2025 09:09:53 INFO  b.c.g.d.l.o.r.d.s.OrderProducerMessageService - Order 019a206c-d049-7dc6-9e01-c45645f6e061 CREATED and inserted in exchange: order-processor.order-received-result.v1.e 
+26/10/2025 09:09:54 INFO  b.c.g.d.l.o.r.a.c.OrderController - Order accepted: d748f009-bc70-466e-ad1c-a32b1e8252b6 
+26/10/2025 09:09:54 INFO  b.c.g.d.l.o.r.d.s.OrderProducerMessageService - Order 019a206c-d443-7e4e-a10d-cd5a06d045f7 CREATED and inserted in exchange: order-processor.order-received-result.v1.e 
+26/10/2025 09:09:55 INFO  b.c.g.d.l.o.r.a.c.OrderController - Order accepted: 22f6e2b1-5a09-4f0b-acb0-5af910538345 
+26/10/2025 09:09:55 INFO  b.c.g.d.l.o.r.d.s.OrderProducerMessageService - Order 019a206c-d79a-799f-bb2d-c82f76187e2d CREATED and inserted in exchange: order-processor.order-received-result.v1.e 
+26/10/2025 09:15:18 INFO  b.c.g.d.l.o.r.a.c.OrderController - Order accepted: 8e68d904-2145-4ac3-8b30-2b81a345bcc4 
+26/10/2025 09:15:18 INFO  b.c.g.d.l.o.r.d.s.OrderProducerMessageService - Order 019a2071-c41c-7ef6-97ba-0bd4781e62a0 CREATED and inserted in exchange: order-processor.order-received-result.v1.e 
+26/10/2025 09:15:18 INFO  b.c.g.d.l.o.r.a.c.OrderController - Order accepted: 214a4ab1-8215-472b-ae90-fe983aae20d5 
+26/10/2025 09:15:18 INFO  b.c.g.d.l.o.r.d.s.OrderProducerMessageService - Order 019a2071-c796-7331-a8a8-c3ac31b2ad56 CREATED and inserted in exchange: order-processor.order-received-result.v1.e 
+26/10/2025 09:15:19 INFO  b.c.g.d.l.o.r.a.c.OrderController - Order accepted: 04768d3b-f1ca-484a-9ab6-3ea396266863 
+26/10/2025 09:15:19 INFO  b.c.g.d.l.o.r.d.s.OrderProducerMessageService - Order 019a2071-ca26-7a11-b1de-cdeb543500fc CREATED and inserted in exchange: order-processor.order-received-result.v1.e 
+26/10/2025 09:15:20 INFO  b.c.g.d.l.o.r.a.c.OrderController - Order accepted: d47906b3-f65c-4f06-8aa2-9e049ac553ec 
+26/10/2025 09:15:20 INFO  b.c.g.d.l.o.r.d.s.OrderProducerMessageService - Order 019a2071-cc43-7914-aeeb-1b39d96ae50a CREATED and inserted in exchange: order-processor.order-received-result.v1.e 
+26/10/2025 09:15:20 INFO  b.c.g.d.l.o.r.a.c.OrderController - Order accepted: 1873b633-6681-47e0-ba5b-a643a638a383 
+26/10/2025 09:15:20 INFO  b.c.g.d.l.o.r.d.s.OrderProducerMessageService - Order 019a2071-ce6d-7bc6-a4c5-f5523d6c5ddb CREATED and inserted in exchange: order-processor.order-received-result.v1.e 
+26/10/2025 09:25:21 INFO  o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+26/10/2025 09:25:21 INFO  o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+26/10/2025 09:25:59 INFO  o.h.v.i.u.Version - HV000001: Hibernate Validator 8.0.3.Final 
+26/10/2025 09:25:59 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - Starting OrderReceiveApplication using Java 17.0.16 with PID 34048 (/home/guntz/dev/projects/spring/desafio/guntz-desafio-loja/microservices/order-receive/target/classes started by guntz in /home/guntz/dev/projects/spring/desafio/guntz-desafio-loja) 
+26/10/2025 09:25:59 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - No active profile set, falling back to 1 default profile: "default" 
+26/10/2025 09:25:59 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+26/10/2025 09:25:59 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+26/10/2025 09:26:02 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http) 
+26/10/2025 09:26:02 INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] 
+26/10/2025 09:26:02 INFO  o.a.c.c.StandardService - Starting service [Tomcat] 
+26/10/2025 09:26:02 INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46] 
+26/10/2025 09:26:02 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+26/10/2025 09:26:02 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3071 ms 
+26/10/2025 09:26:04 WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server 
+26/10/2025 09:26:04 INFO  o.s.b.a.e.w.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator' 
+26/10/2025 09:26:04 INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] 
+26/10/2025 09:26:04 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/' 
+26/10/2025 09:26:04 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - Started OrderReceiveApplication in 6.355 seconds (process running for 7.465) 
+26/10/2025 09:26:06 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+26/10/2025 09:26:06 INFO  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+26/10/2025 09:26:06 INFO  o.s.w.s.DispatcherServlet - Completed initialization in 3 ms 
+26/10/2025 09:26:06 INFO  b.c.g.d.l.o.r.a.c.OrderController - Order accepted: d7367f87-5e86-4866-b062-e9f4bce0a8f8 
+26/10/2025 09:26:06 INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672] 
+26/10/2025 09:26:06 INFO  o.s.a.r.c.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#74fb263d:0/SimpleConnection@639b3f7f [delegate=amqp://rabbitmq@127.0.0.1:5672/, localPort=56466] 
+26/10/2025 09:26:06 INFO  b.c.g.d.l.o.r.d.s.OrderProducerMessageService - Order 019a207b-a8c7-7b34-96d8-9992f589dc53 CREATED and inserted in exchange: order-processor.order-received-result.v1.e 
+26/10/2025 09:26:08 INFO  b.c.g.d.l.o.r.a.c.OrderController - Order accepted: 182e529c-03ac-4add-aa30-6f16929946b4 
+26/10/2025 09:26:08 INFO  b.c.g.d.l.o.r.d.s.OrderProducerMessageService - Order 019a207b-b0ed-77eb-b64a-b937188ab8d2 CREATED and inserted in exchange: order-processor.order-received-result.v1.e 
+26/10/2025 09:26:09 INFO  b.c.g.d.l.o.r.a.c.OrderController - Order accepted: 63e10063-e329-460a-ac6e-af0f12d41b1a 
+26/10/2025 09:26:09 INFO  b.c.g.d.l.o.r.d.s.OrderProducerMessageService - Order 019a207b-b548-7624-96c0-b3c1033d6711 CREATED and inserted in exchange: order-processor.order-received-result.v1.e 
+26/10/2025 09:26:10 INFO  b.c.g.d.l.o.r.a.c.OrderController - Order accepted: 691823d7-7fd9-444b-9d20-9e74c7b219cf 
+26/10/2025 09:26:10 INFO  b.c.g.d.l.o.r.d.s.OrderProducerMessageService - Order 019a207b-b88a-7455-8980-96b10765b3b1 CREATED and inserted in exchange: order-processor.order-received-result.v1.e 
+26/10/2025 09:32:22 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification) 
+26/10/2025 09:32:22 INFO  o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+26/10/2025 09:32:22 INFO  o.a.c.h.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"] 
+26/10/2025 09:32:22 INFO  o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+26/10/2025 09:32:22 INFO  o.a.c.h.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"] 
+26/10/2025 09:32:22 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - Starting OrderReceiveApplication using Java 17.0.16 with PID 34048 (/home/guntz/dev/projects/spring/desafio/guntz-desafio-loja/microservices/order-receive/target/classes started by guntz in /home/guntz/dev/projects/spring/desafio/guntz-desafio-loja) 
+26/10/2025 09:32:22 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - No active profile set, falling back to 1 default profile: "default" 
+26/10/2025 09:32:22 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http) 
+26/10/2025 09:32:22 INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] 
+26/10/2025 09:32:22 INFO  o.a.c.c.StandardService - Starting service [Tomcat] 
+26/10/2025 09:32:22 INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46] 
+26/10/2025 09:32:22 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+26/10/2025 09:32:22 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 365 ms 
+26/10/2025 09:32:23 WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server 
+26/10/2025 09:32:23 INFO  o.s.b.a.e.w.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator' 
+26/10/2025 09:32:23 INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] 
+26/10/2025 09:32:23 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/' 
+26/10/2025 09:32:23 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - Started OrderReceiveApplication in 0.582 seconds (process running for 385.838) 
+26/10/2025 09:32:23 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged 
+26/10/2025 09:32:48 INFO  o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+26/10/2025 09:32:48 INFO  o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+26/10/2025 09:32:50 INFO  o.h.v.i.u.Version - HV000001: Hibernate Validator 8.0.3.Final 
+26/10/2025 09:32:50 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - Starting OrderReceiveApplication using Java 17.0.16 with PID 36459 (/home/guntz/dev/projects/spring/desafio/guntz-desafio-loja/microservices/order-receive/target/classes started by guntz in /home/guntz/dev/projects/spring/desafio/guntz-desafio-loja) 
+26/10/2025 09:32:50 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - No active profile set, falling back to 1 default profile: "default" 
+26/10/2025 09:32:50 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+26/10/2025 09:32:50 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+26/10/2025 09:32:52 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http) 
+26/10/2025 09:32:52 INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] 
+26/10/2025 09:32:52 INFO  o.a.c.c.StandardService - Starting service [Tomcat] 
+26/10/2025 09:32:52 INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46] 
+26/10/2025 09:32:52 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+26/10/2025 09:32:52 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1725 ms 
+26/10/2025 09:32:53 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+26/10/2025 09:32:53 INFO  o.s.b.a.e.w.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator' 
+26/10/2025 09:32:53 INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] 
+26/10/2025 09:32:53 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/' 
+26/10/2025 09:32:53 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - Started OrderReceiveApplication in 3.648 seconds (process running for 4.298) 
+26/10/2025 09:32:53 INFO  o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+26/10/2025 09:32:53 INFO  o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+26/10/2025 09:32:58 INFO  o.h.v.i.u.Version - HV000001: Hibernate Validator 8.0.3.Final 
+26/10/2025 09:32:58 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - Starting OrderReceiveApplication using Java 17.0.16 with PID 36675 (/home/guntz/dev/projects/spring/desafio/guntz-desafio-loja/microservices/order-receive/target/classes started by guntz in /home/guntz/dev/projects/spring/desafio/guntz-desafio-loja) 
+26/10/2025 09:32:58 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - No active profile set, falling back to 1 default profile: "default" 
+26/10/2025 09:32:59 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+26/10/2025 09:32:59 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+26/10/2025 09:33:01 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http) 
+26/10/2025 09:33:01 INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] 
+26/10/2025 09:33:01 INFO  o.a.c.c.StandardService - Starting service [Tomcat] 
+26/10/2025 09:33:01 INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46] 
+26/10/2025 09:33:01 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+26/10/2025 09:33:01 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2862 ms 
+26/10/2025 09:33:03 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+26/10/2025 09:33:03 INFO  o.s.b.a.e.w.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator' 
+26/10/2025 09:33:03 INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] 
+26/10/2025 09:33:03 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/' 
+26/10/2025 09:33:03 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - Started OrderReceiveApplication in 5.553 seconds (process running for 6.564) 
+26/10/2025 09:33:34 INFO  o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+26/10/2025 09:33:34 INFO  o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+26/10/2025 09:33:36 INFO  o.h.v.i.u.Version - HV000001: Hibernate Validator 8.0.3.Final 
+26/10/2025 09:33:36 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - Starting OrderReceiveApplication using Java 17.0.16 with PID 37739 (/home/guntz/dev/projects/spring/desafio/guntz-desafio-loja/microservices/order-receive/target/classes started by guntz in /home/guntz/dev/projects/spring/desafio/guntz-desafio-loja) 
+26/10/2025 09:33:36 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - No active profile set, falling back to 1 default profile: "default" 
+26/10/2025 09:33:36 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+26/10/2025 09:33:36 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+26/10/2025 09:33:38 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http) 
+26/10/2025 09:33:38 INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] 
+26/10/2025 09:33:38 INFO  o.a.c.c.StandardService - Starting service [Tomcat] 
+26/10/2025 09:33:38 INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46] 
+26/10/2025 09:33:38 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+26/10/2025 09:33:38 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2174 ms 
+26/10/2025 09:33:40 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+26/10/2025 09:33:40 INFO  o.s.b.a.e.w.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator' 
+26/10/2025 09:33:40 INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] 
+26/10/2025 09:33:40 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/' 
+26/10/2025 09:33:40 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - Started OrderReceiveApplication in 4.28 seconds (process running for 5.147) 
+26/10/2025 09:33:52 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+26/10/2025 09:33:52 INFO  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+26/10/2025 09:33:52 INFO  o.s.w.s.DispatcherServlet - Completed initialization in 1 ms 
+26/10/2025 09:33:52 INFO  b.c.g.d.l.o.r.a.c.OrderController - Order accepted: 05037f1f-079c-4c17-acad-27c7df1bfcbb 
+26/10/2025 09:33:52 INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672] 
+26/10/2025 09:33:52 INFO  o.s.a.r.c.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#5ca84051:0/SimpleConnection@6b4fb9ae [delegate=amqp://rabbitmq@127.0.0.1:5672/, localPort=47782] 
+26/10/2025 09:33:52 INFO  b.c.g.d.l.o.r.d.s.OrderProducerMessageService - Order 019a2082-c5f6-785d-a648-2663c200995a CREATED and inserted in exchange: order-processor.order-received-result.v1.e 
+26/10/2025 09:33:53 INFO  b.c.g.d.l.o.r.a.c.OrderController - Order accepted: 371732e3-8933-4a2c-bdc2-d8fd3d38812a 
+26/10/2025 09:33:53 INFO  b.c.g.d.l.o.r.d.s.OrderProducerMessageService - Order 019a2082-cafb-71c0-8e89-120a6c08e8d9 CREATED and inserted in exchange: order-processor.order-received-result.v1.e 
+26/10/2025 09:36:06 INFO  b.c.g.d.l.o.r.a.c.OrderController - Order accepted: 1805285c-5d78-4cc9-9f8a-ba955f07b41e 
+26/10/2025 09:36:06 INFO  b.c.g.d.l.o.r.d.s.OrderProducerMessageService - Order 019a2084-d20f-7d84-80a4-ddd8fa98ea22 CREATED and inserted in exchange: order-processor.order-received-result.v1.e 
+26/10/2025 09:36:07 INFO  b.c.g.d.l.o.r.a.c.OrderController - Order accepted: fb10dfc8-b91f-43a3-8aab-6fe39e5c965f 
+26/10/2025 09:36:07 INFO  b.c.g.d.l.o.r.d.s.OrderProducerMessageService - Order 019a2084-d55e-7a05-8063-dac856543632 CREATED and inserted in exchange: order-processor.order-received-result.v1.e 
+26/10/2025 09:36:08 INFO  b.c.g.d.l.o.r.a.c.OrderController - Order accepted: 38e1ad0c-430d-4f43-ad98-4618b6cd1ff7 
+26/10/2025 09:36:08 INFO  b.c.g.d.l.o.r.d.s.OrderProducerMessageService - Order 019a2084-d82b-7c49-9298-96ac784346e1 CREATED and inserted in exchange: order-processor.order-received-result.v1.e 
+26/10/2025 09:40:52 INFO  o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+26/10/2025 09:40:52 INFO  o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+26/10/2025 09:40:54 INFO  o.h.v.i.u.Version - HV000001: Hibernate Validator 8.0.3.Final 
+26/10/2025 09:40:54 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - Starting OrderReceiveApplication using Java 17.0.16 with PID 40327 (/home/guntz/dev/projects/spring/desafio/guntz-desafio-loja/microservices/order-receive/target/classes started by guntz in /home/guntz/dev/projects/spring/desafio/guntz-desafio-loja) 
+26/10/2025 09:40:54 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - No active profile set, falling back to 1 default profile: "default" 
+26/10/2025 09:40:54 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+26/10/2025 09:40:54 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+26/10/2025 09:40:56 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http) 
+26/10/2025 09:40:56 INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] 
+26/10/2025 09:40:56 INFO  o.a.c.c.StandardService - Starting service [Tomcat] 
+26/10/2025 09:40:56 INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46] 
+26/10/2025 09:40:56 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+26/10/2025 09:40:56 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1895 ms 
+26/10/2025 09:40:57 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+26/10/2025 09:40:57 INFO  o.s.b.a.e.w.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator' 
+26/10/2025 09:40:57 INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] 
+26/10/2025 09:40:57 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/' 
+26/10/2025 09:40:57 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - Started OrderReceiveApplication in 4.007 seconds (process running for 4.733) 
+26/10/2025 09:43:03 INFO  o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+26/10/2025 09:43:03 INFO  o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+26/10/2025 09:43:05 INFO  o.h.v.i.u.Version - HV000001: Hibernate Validator 8.0.3.Final 
+26/10/2025 09:43:05 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - Starting OrderReceiveApplication using Java 17.0.16 with PID 42159 (/home/guntz/dev/projects/spring/desafio/guntz-desafio-loja/microservices/order-receive/target/classes started by guntz in /home/guntz/dev/projects/spring/desafio/guntz-desafio-loja) 
+26/10/2025 09:43:05 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - No active profile set, falling back to 1 default profile: "default" 
+26/10/2025 09:43:05 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+26/10/2025 09:43:05 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+26/10/2025 09:43:07 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http) 
+26/10/2025 09:43:07 INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] 
+26/10/2025 09:43:07 INFO  o.a.c.c.StandardService - Starting service [Tomcat] 
+26/10/2025 09:43:07 INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46] 
+26/10/2025 09:43:07 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+26/10/2025 09:43:07 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2110 ms 
+26/10/2025 09:43:08 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+26/10/2025 09:43:08 INFO  o.s.b.a.e.w.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator' 
+26/10/2025 09:43:08 INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] 
+26/10/2025 09:43:08 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/' 
+26/10/2025 09:43:08 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - Started OrderReceiveApplication in 3.96 seconds (process running for 4.752) 
+26/10/2025 09:44:24 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+26/10/2025 09:44:24 INFO  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+26/10/2025 09:44:24 INFO  o.s.w.s.DispatcherServlet - Completed initialization in 2 ms 
+26/10/2025 09:44:24 INFO  b.c.g.d.l.o.r.a.c.OrderController - Order accepted: dc6fb274-2bff-4553-8004-b8afa243cbaf 
+26/10/2025 09:44:24 INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672] 
+26/10/2025 09:44:24 INFO  o.s.a.r.c.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#9e80270:0/SimpleConnection@64a6e509 [delegate=amqp://rabbitmq@127.0.0.1:5672/, localPort=40874] 
+26/10/2025 09:44:24 INFO  b.c.g.d.l.o.r.d.s.OrderProducerMessageService - Order 019a208c-6abe-7974-ad2c-64a9d568c056 CREATED and inserted in exchange: order-processor.order-received-result.v1.e 
+26/10/2025 09:44:26 INFO  b.c.g.d.l.o.r.a.c.OrderController - Order accepted: 5f4f1da3-b28b-476c-b757-6f660a74b994 
+26/10/2025 09:44:26 INFO  b.c.g.d.l.o.r.d.s.OrderProducerMessageService - Order 019a208c-70a6-7681-9788-851c02e888fd CREATED and inserted in exchange: order-processor.order-received-result.v1.e 
+26/10/2025 09:44:31 INFO  b.c.g.d.l.o.r.a.c.OrderController - Order accepted: 1d2365f5-7406-4fdb-86d2-e663ba627526 
+26/10/2025 09:44:31 INFO  b.c.g.d.l.o.r.d.s.OrderProducerMessageService - Order 019a208c-84c4-7158-9c15-73c6716a20e2 CREATED and inserted in exchange: order-processor.order-received-result.v1.e 
+26/10/2025 09:44:32 INFO  b.c.g.d.l.o.r.a.c.OrderController - Order accepted: 4eb513d2-2c11-4846-a277-d10416533561 
+26/10/2025 09:44:32 INFO  b.c.g.d.l.o.r.d.s.OrderProducerMessageService - Order 019a208c-8834-7883-967c-b4249e8e0c81 CREATED and inserted in exchange: order-processor.order-received-result.v1.e 
+26/10/2025 09:44:32 INFO  b.c.g.d.l.o.r.a.c.OrderController - Order accepted: 72f0811d-8036-4608-bbc0-a049d40d2ec5 
+26/10/2025 09:44:32 INFO  b.c.g.d.l.o.r.d.s.OrderProducerMessageService - Order 019a208c-8b48-7285-b817-08c7dbf84a91 CREATED and inserted in exchange: order-processor.order-received-result.v1.e 
+26/10/2025 09:50:02 INFO  o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+26/10/2025 09:50:02 INFO  o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+26/10/2025 09:50:05 INFO  o.h.v.i.u.Version - HV000001: Hibernate Validator 8.0.3.Final 
+26/10/2025 09:50:05 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - Starting OrderReceiveApplication using Java 17.0.16 with PID 45234 (/home/guntz/dev/projects/spring/desafio/guntz-desafio-loja/microservices/order-receive/target/classes started by guntz in /home/guntz/dev/projects/spring/desafio/guntz-desafio-loja) 
+26/10/2025 09:50:05 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - No active profile set, falling back to 1 default profile: "default" 
+26/10/2025 09:50:05 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+26/10/2025 09:50:05 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+26/10/2025 09:50:07 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http) 
+26/10/2025 09:50:07 INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] 
+26/10/2025 09:50:07 INFO  o.a.c.c.StandardService - Starting service [Tomcat] 
+26/10/2025 09:50:07 INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46] 
+26/10/2025 09:50:07 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+26/10/2025 09:50:07 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1912 ms 
+26/10/2025 09:50:08 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+26/10/2025 09:50:08 INFO  o.s.b.a.e.w.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator' 
+26/10/2025 09:50:08 INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] 
+26/10/2025 09:50:08 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/' 
+26/10/2025 09:50:08 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - Started OrderReceiveApplication in 4.286 seconds (process running for 4.999) 
+26/10/2025 09:51:03 INFO  o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+26/10/2025 09:51:03 INFO  o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+26/10/2025 09:51:05 INFO  o.h.v.i.u.Version - HV000001: Hibernate Validator 8.0.3.Final 
+26/10/2025 09:51:05 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - Starting OrderReceiveApplication using Java 17.0.16 with PID 45787 (/home/guntz/dev/projects/spring/desafio/guntz-desafio-loja/microservices/order-receive/target/classes started by guntz in /home/guntz/dev/projects/spring/desafio/guntz-desafio-loja) 
+26/10/2025 09:51:05 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - No active profile set, falling back to 1 default profile: "default" 
+26/10/2025 09:51:05 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+26/10/2025 09:51:05 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+26/10/2025 09:51:07 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http) 
+26/10/2025 09:51:07 INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] 
+26/10/2025 09:51:07 INFO  o.a.c.c.StandardService - Starting service [Tomcat] 
+26/10/2025 09:51:07 INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46] 
+26/10/2025 09:51:07 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+26/10/2025 09:51:07 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1825 ms 
+26/10/2025 09:51:08 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+26/10/2025 09:51:08 INFO  o.s.b.a.e.w.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator' 
+26/10/2025 09:51:08 INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] 
+26/10/2025 09:51:08 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/' 
+26/10/2025 09:51:08 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - Started OrderReceiveApplication in 3.56 seconds (process running for 4.184) 
+26/10/2025 09:51:44 INFO  o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+26/10/2025 09:51:44 INFO  o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+26/10/2025 09:51:46 INFO  o.h.v.i.u.Version - HV000001: Hibernate Validator 8.0.3.Final 
+26/10/2025 09:51:46 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - Starting OrderReceiveApplication using Java 17.0.16 with PID 46198 (/home/guntz/dev/projects/spring/desafio/guntz-desafio-loja/microservices/order-receive/target/classes started by guntz in /home/guntz/dev/projects/spring/desafio/guntz-desafio-loja) 
+26/10/2025 09:51:46 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - No active profile set, falling back to 1 default profile: "default" 
+26/10/2025 09:51:46 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+26/10/2025 09:51:46 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+26/10/2025 09:51:48 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http) 
+26/10/2025 09:51:48 INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] 
+26/10/2025 09:51:48 INFO  o.a.c.c.StandardService - Starting service [Tomcat] 
+26/10/2025 09:51:48 INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46] 
+26/10/2025 09:51:48 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+26/10/2025 09:51:48 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2317 ms 
+26/10/2025 09:51:50 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+26/10/2025 09:51:50 INFO  o.s.b.a.e.w.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator' 
+26/10/2025 09:51:50 INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] 
+26/10/2025 09:51:50 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/' 
+26/10/2025 09:51:50 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - Started OrderReceiveApplication in 4.996 seconds (process running for 5.779) 
+26/10/2025 09:52:11 INFO  o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+26/10/2025 09:52:11 INFO  o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+26/10/2025 09:52:13 INFO  o.h.v.i.u.Version - HV000001: Hibernate Validator 8.0.3.Final 
+26/10/2025 09:52:13 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - Starting OrderReceiveApplication using Java 17.0.16 with PID 47208 (/home/guntz/dev/projects/spring/desafio/guntz-desafio-loja/microservices/order-receive/target/classes started by guntz in /home/guntz/dev/projects/spring/desafio/guntz-desafio-loja) 
+26/10/2025 09:52:13 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - No active profile set, falling back to 1 default profile: "default" 
+26/10/2025 09:52:13 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+26/10/2025 09:52:13 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+26/10/2025 09:52:15 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http) 
+26/10/2025 09:52:15 INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] 
+26/10/2025 09:52:15 INFO  o.a.c.c.StandardService - Starting service [Tomcat] 
+26/10/2025 09:52:15 INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46] 
+26/10/2025 09:52:15 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+26/10/2025 09:52:15 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2348 ms 
+26/10/2025 09:52:17 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+26/10/2025 09:52:17 INFO  o.s.b.a.e.w.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator' 
+26/10/2025 09:52:17 INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] 
+26/10/2025 09:52:17 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/' 
+26/10/2025 09:52:17 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - Started OrderReceiveApplication in 4.488 seconds (process running for 5.216) 
+26/10/2025 09:52:19 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+26/10/2025 09:52:19 INFO  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+26/10/2025 09:52:19 INFO  o.s.w.s.DispatcherServlet - Completed initialization in 1 ms 
+26/10/2025 09:53:52 INFO  b.c.g.d.l.o.r.a.c.OrderController - Order accepted: e77c2ed0-3416-4d7d-a1c6-3d7aee472dc8 
+26/10/2025 09:53:52 INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672] 
+26/10/2025 09:53:52 INFO  o.s.a.r.c.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#5073d93:0/SimpleConnection@1fa5e29 [delegate=amqp://rabbitmq@127.0.0.1:5672/, localPort=42978] 
+26/10/2025 09:53:52 INFO  b.c.g.d.l.o.r.d.s.OrderProducerMessageService - Order 019a2095-1582-794d-8818-78af76b314d1 CREATED and inserted in exchange: order-processor.order-received-result.v1.e 
+26/10/2025 09:53:53 INFO  b.c.g.d.l.o.r.a.c.OrderController - Order accepted: 4ff97c6b-282e-4a73-9600-9eb93ce306ce 
+26/10/2025 09:53:53 INFO  b.c.g.d.l.o.r.d.s.OrderProducerMessageService - Order 019a2095-1a1b-7581-a8d1-f2dc80c642bc CREATED and inserted in exchange: order-processor.order-received-result.v1.e 
+26/10/2025 09:53:54 INFO  b.c.g.d.l.o.r.a.c.OrderController - Order accepted: 4cc78ff8-12f5-4cf5-93ef-be95f526d299 
+26/10/2025 09:53:54 INFO  b.c.g.d.l.o.r.d.s.OrderProducerMessageService - Order 019a2095-1d59-72d0-98d4-af21d7c8987e CREATED and inserted in exchange: order-processor.order-received-result.v1.e 
+26/10/2025 09:58:28 INFO  b.c.g.d.l.o.r.a.c.OrderController - Order accepted: ca47394e-7d74-479f-a51f-01c1d6789432 
+26/10/2025 09:58:28 INFO  b.c.g.d.l.o.r.d.s.OrderProducerMessageService - Order 019a2099-4cf3-760f-9882-223cc5f68360 CREATED and inserted in exchange: order-processor.order-received-result.v1.e 
+26/10/2025 09:58:29 INFO  b.c.g.d.l.o.r.a.c.OrderController - Order accepted: 11c1e3ac-8e8a-48ee-9e11-c4eab7c948e0 
+26/10/2025 09:58:29 INFO  b.c.g.d.l.o.r.d.s.OrderProducerMessageService - Order 019a2099-5088-7c59-9312-b1dececf935b CREATED and inserted in exchange: order-processor.order-received-result.v1.e 
+26/10/2025 09:58:30 INFO  b.c.g.d.l.o.r.a.c.OrderController - Order accepted: 4fd9690e-ff09-43cf-8e55-87c607fd0744 
+26/10/2025 09:58:30 INFO  b.c.g.d.l.o.r.d.s.OrderProducerMessageService - Order 019a2099-537c-78a7-8941-768bacdacc1d CREATED and inserted in exchange: order-processor.order-received-result.v1.e 
+26/10/2025 10:00:17 INFO  o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+26/10/2025 10:00:17 INFO  o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+26/10/2025 10:01:34 INFO  o.h.v.i.u.Version - HV000001: Hibernate Validator 8.0.3.Final 
+26/10/2025 10:01:34 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - Starting OrderReceiveApplication using Java 17.0.16 with PID 51624 (/home/guntz/dev/projects/spring/desafio/guntz-desafio-loja/microservices/order-receive/target/classes started by guntz in /home/guntz/dev/projects/spring/desafio/guntz-desafio-loja) 
+26/10/2025 10:01:34 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - No active profile set, falling back to 1 default profile: "default" 
+26/10/2025 10:01:34 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+26/10/2025 10:01:34 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+26/10/2025 10:01:37 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http) 
+26/10/2025 10:01:37 INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] 
+26/10/2025 10:01:37 INFO  o.a.c.c.StandardService - Starting service [Tomcat] 
+26/10/2025 10:01:37 INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46] 
+26/10/2025 10:01:37 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+26/10/2025 10:01:37 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2629 ms 
+26/10/2025 10:01:39 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+26/10/2025 10:01:39 INFO  o.s.b.a.e.w.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator' 
+26/10/2025 10:01:39 INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] 
+26/10/2025 10:01:39 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/' 
+26/10/2025 10:01:39 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - Started OrderReceiveApplication in 5.515 seconds (process running for 6.61) 
+26/10/2025 10:01:44 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+26/10/2025 10:01:44 INFO  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+26/10/2025 10:01:44 INFO  o.s.w.s.DispatcherServlet - Completed initialization in 1 ms 
+26/10/2025 10:01:50 INFO  b.c.g.d.l.o.r.a.c.OrderController - Order accepted: adaec2b1-1595-4638-a572-b992d67d7c31 
+26/10/2025 10:01:50 INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672] 
+26/10/2025 10:01:50 INFO  o.s.a.r.c.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#5352947c:0/SimpleConnection@251eabe2 [delegate=amqp://rabbitmq@127.0.0.1:5672/, localPort=33722] 
+26/10/2025 10:01:50 INFO  b.c.g.d.l.o.r.d.s.OrderProducerMessageService - Order 019a209c-5f2b-713b-b8ed-dffe55852337 CREATED and inserted in exchange: order-processor.order-received-result.v1.e 
+26/10/2025 10:01:52 INFO  b.c.g.d.l.o.r.a.c.OrderController - Order accepted: 9fb136e0-f657-438c-bf5f-228581c74613 
+26/10/2025 10:01:52 INFO  b.c.g.d.l.o.r.d.s.OrderProducerMessageService - Order 019a209c-666a-7839-9db7-917c6d976473 CREATED and inserted in exchange: order-processor.order-received-result.v1.e 
+26/10/2025 10:01:52 INFO  b.c.g.d.l.o.r.a.c.OrderController - Order accepted: 920e3d34-3f22-436c-abdc-71c6e647fa84 
+26/10/2025 10:01:52 INFO  b.c.g.d.l.o.r.d.s.OrderProducerMessageService - Order 019a209c-697b-7d4c-afeb-d0c78c63da93 CREATED and inserted in exchange: order-processor.order-received-result.v1.e 
+26/10/2025 10:01:53 INFO  b.c.g.d.l.o.r.a.c.OrderController - Order accepted: 93943c3d-b64b-41de-9c67-3a8b59f20bc7 
+26/10/2025 10:01:53 INFO  b.c.g.d.l.o.r.d.s.OrderProducerMessageService - Order 019a209c-6c37-7f18-9b6f-d11797caa4d2 CREATED and inserted in exchange: order-processor.order-received-result.v1.e 
+26/10/2025 10:04:15 INFO  o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+26/10/2025 10:04:15 INFO  o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+26/10/2025 10:09:53 INFO  o.h.v.i.u.Version - HV000001: Hibernate Validator 8.0.3.Final 
+26/10/2025 10:09:53 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - Starting OrderReceiveApplication using Java 17.0.16 with PID 55621 (/home/guntz/dev/projects/spring/desafio/guntz-desafio-loja/microservices/order-receive/target/classes started by guntz in /home/guntz/dev/projects/spring/desafio/guntz-desafio-loja) 
+26/10/2025 10:09:53 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - No active profile set, falling back to 1 default profile: "default" 
+26/10/2025 10:09:53 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+26/10/2025 10:09:53 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+26/10/2025 10:09:55 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http) 
+26/10/2025 10:09:55 INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] 
+26/10/2025 10:09:55 INFO  o.a.c.c.StandardService - Starting service [Tomcat] 
+26/10/2025 10:09:55 INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46] 
+26/10/2025 10:09:55 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+26/10/2025 10:09:55 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2319 ms 
+26/10/2025 10:09:57 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+26/10/2025 10:09:57 INFO  o.s.b.a.e.w.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator' 
+26/10/2025 10:09:57 INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] 
+26/10/2025 10:09:57 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/' 
+26/10/2025 10:09:57 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - Started OrderReceiveApplication in 4.959 seconds (process running for 5.937) 
+26/10/2025 10:10:04 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+26/10/2025 10:10:04 INFO  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+26/10/2025 10:10:04 INFO  o.s.w.s.DispatcherServlet - Completed initialization in 1 ms 
+26/10/2025 10:11:25 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications) 
+26/10/2025 10:11:25 INFO  o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+26/10/2025 10:11:25 INFO  o.a.c.h.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"] 
+26/10/2025 10:11:25 INFO  o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+26/10/2025 10:11:25 INFO  o.a.c.h.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"] 
+26/10/2025 10:11:25 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - Starting OrderReceiveApplication using Java 17.0.16 with PID 55621 (/home/guntz/dev/projects/spring/desafio/guntz-desafio-loja/microservices/order-receive/target/classes started by guntz in /home/guntz/dev/projects/spring/desafio/guntz-desafio-loja) 
+26/10/2025 10:11:25 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - No active profile set, falling back to 1 default profile: "default" 
+26/10/2025 10:11:26 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http) 
+26/10/2025 10:11:26 INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] 
+26/10/2025 10:11:26 INFO  o.a.c.c.StandardService - Starting service [Tomcat] 
+26/10/2025 10:11:26 INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46] 
+26/10/2025 10:11:26 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+26/10/2025 10:11:26 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 374 ms 
+26/10/2025 10:11:26 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+26/10/2025 10:11:26 INFO  o.s.b.a.e.w.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator' 
+26/10/2025 10:11:26 INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] 
+26/10/2025 10:11:26 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/' 
+26/10/2025 10:11:26 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - Started OrderReceiveApplication in 0.671 seconds (process running for 94.963) 
+26/10/2025 10:11:26 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged 
+26/10/2025 10:11:33 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+26/10/2025 10:11:33 INFO  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+26/10/2025 10:11:33 INFO  o.s.w.s.DispatcherServlet - Completed initialization in 2 ms 
+26/10/2025 10:11:33 INFO  o.s.a.AbstractOpenApiResource - Init duration for springdoc-openapi is: 251 ms 
+26/10/2025 10:11:44 INFO  o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+26/10/2025 10:11:44 INFO  o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+26/10/2025 10:11:57 INFO  o.h.v.i.u.Version - HV000001: Hibernate Validator 8.0.3.Final 
+26/10/2025 10:11:58 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - Starting OrderReceiveApplication using Java 17.0.16 with PID 56890 (/home/guntz/dev/projects/spring/desafio/guntz-desafio-loja/microservices/order-receive/target/classes started by guntz in /home/guntz/dev/projects/spring/desafio/guntz-desafio-loja) 
+26/10/2025 10:11:58 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - No active profile set, falling back to 1 default profile: "default" 
+26/10/2025 10:11:58 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+26/10/2025 10:11:58 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+26/10/2025 10:12:00 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http) 
+26/10/2025 10:12:00 INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] 
+26/10/2025 10:12:00 INFO  o.a.c.c.StandardService - Starting service [Tomcat] 
+26/10/2025 10:12:00 INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46] 
+26/10/2025 10:12:00 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+26/10/2025 10:12:00 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2053 ms 
+26/10/2025 10:12:01 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+26/10/2025 10:12:01 INFO  o.s.b.a.e.w.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator' 
+26/10/2025 10:12:01 INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] 
+26/10/2025 10:12:01 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/' 
+26/10/2025 10:12:01 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - Started OrderReceiveApplication in 4.032 seconds (process running for 4.715) 
+26/10/2025 10:12:04 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+26/10/2025 10:12:04 INFO  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+26/10/2025 10:12:04 INFO  o.s.w.s.DispatcherServlet - Completed initialization in 2 ms 
+26/10/2025 10:12:10 INFO  b.c.g.d.l.o.r.a.c.OrderController - Order accepted: eb81f78a-922a-4b39-b63c-7bfa70c57513 
+26/10/2025 10:12:10 INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672] 
+26/10/2025 10:12:10 INFO  o.s.a.r.c.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#48737cdf:0/SimpleConnection@5292c304 [delegate=amqp://rabbitmq@127.0.0.1:5672/, localPort=59088] 
+26/10/2025 10:12:10 INFO  b.c.g.d.l.o.r.d.s.OrderProducerMessageService - Order 019a20a5-d540-72c0-b749-46bfe9a448ea CREATED and inserted in exchange: order-processor.order-received-result.v1.e 
+26/10/2025 10:12:11 INFO  b.c.g.d.l.o.r.a.c.OrderController - Order accepted: 19d2e796-c868-40b1-8099-03e3d9e5c704 
+26/10/2025 10:12:11 INFO  b.c.g.d.l.o.r.d.s.OrderProducerMessageService - Order 019a20a5-d9ef-7430-a707-01f648d0110a CREATED and inserted in exchange: order-processor.order-received-result.v1.e 
+26/10/2025 10:12:12 INFO  b.c.g.d.l.o.r.a.c.OrderController - Order accepted: 0f644de1-31fe-40ad-85c7-816a0ccd3d91 
+26/10/2025 10:12:12 INFO  b.c.g.d.l.o.r.d.s.OrderProducerMessageService - Order 019a20a5-dd51-7567-80d3-e30dddbb1879 CREATED and inserted in exchange: order-processor.order-received-result.v1.e 
+26/10/2025 10:12:13 INFO  b.c.g.d.l.o.r.a.c.OrderController - Order accepted: f3ecf983-ad34-4f8c-8ab0-11a13dcf8d24 
+26/10/2025 10:12:13 INFO  b.c.g.d.l.o.r.d.s.OrderProducerMessageService - Order 019a20a5-dfd2-7d80-9e55-bca0cd3fa721 CREATED and inserted in exchange: order-processor.order-received-result.v1.e 
+26/10/2025 10:12:13 INFO  b.c.g.d.l.o.r.a.c.OrderController - Order accepted: e0e9154c-33ba-4e08-9562-e536dc1ce34a 
+26/10/2025 10:12:13 INFO  b.c.g.d.l.o.r.d.s.OrderProducerMessageService - Order 019a20a5-e1ea-7605-9612-34e67d898cb5 CREATED and inserted in exchange: order-processor.order-received-result.v1.e 
+26/10/2025 10:14:52 INFO  o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+26/10/2025 10:14:52 INFO  o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+26/10/2025 10:34:12 INFO  o.h.v.i.u.Version - HV000001: Hibernate Validator 8.0.3.Final 
+26/10/2025 10:34:12 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - Starting OrderReceiveApplication using Java 17.0.16 with PID 6447 (/home/guntz/dev/projects/spring/desafio/guntz-desafio-loja/microservices/order-receive/target/classes started by guntz in /home/guntz/dev/projects/spring/desafio/guntz-desafio-loja) 
+26/10/2025 10:34:12 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - No active profile set, falling back to 1 default profile: "default" 
+26/10/2025 10:34:12 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+26/10/2025 10:34:12 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+26/10/2025 10:34:16 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http) 
+26/10/2025 10:34:16 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4041 ms 
+26/10/2025 10:34:19 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+26/10/2025 10:34:19 INFO  o.s.b.a.e.w.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator' 
+26/10/2025 10:34:19 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/' 
+26/10/2025 10:34:19 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - Started OrderReceiveApplication in 7.808 seconds (process running for 9.037) 
+26/10/2025 10:34:19 INFO  o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+26/10/2025 10:34:19 INFO  o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+26/10/2025 10:34:25 INFO  o.h.v.i.u.Version - HV000001: Hibernate Validator 8.0.3.Final 
+26/10/2025 10:34:25 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - Starting OrderReceiveApplication using Java 17.0.16 with PID 6734 (/home/guntz/dev/projects/spring/desafio/guntz-desafio-loja/microservices/order-receive/target/classes started by guntz in /home/guntz/dev/projects/spring/desafio/guntz-desafio-loja) 
+26/10/2025 10:34:25 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - No active profile set, falling back to 1 default profile: "default" 
+26/10/2025 10:34:25 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+26/10/2025 10:34:25 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+26/10/2025 10:34:28 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http) 
+26/10/2025 10:34:28 INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] 
+26/10/2025 10:34:28 INFO  o.a.c.c.StandardService - Starting service [Tomcat] 
+26/10/2025 10:34:28 INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46] 
+26/10/2025 10:34:28 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+26/10/2025 10:34:28 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2939 ms 
+26/10/2025 10:34:30 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+26/10/2025 10:34:30 INFO  o.s.b.a.e.w.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator' 
+26/10/2025 10:34:30 INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] 
+26/10/2025 10:34:30 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/' 
+26/10/2025 10:34:30 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - Started OrderReceiveApplication in 5.676 seconds (process running for 6.825) 
+26/10/2025 10:34:37 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+26/10/2025 10:34:37 INFO  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+26/10/2025 10:34:37 INFO  o.s.w.s.DispatcherServlet - Completed initialization in 1 ms 
+26/10/2025 10:36:08 INFO  o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+26/10/2025 10:36:08 INFO  o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+26/10/2025 10:36:19 INFO  o.h.v.i.u.Version - HV000001: Hibernate Validator 8.0.3.Final 
+26/10/2025 10:36:19 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - Starting OrderReceiveApplication using Java 17.0.16 with PID 7979 (/home/guntz/dev/projects/spring/desafio/guntz-desafio-loja/microservices/order-receive/target/classes started by guntz in /home/guntz/dev/projects/spring/desafio/guntz-desafio-loja) 
+26/10/2025 10:36:19 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - No active profile set, falling back to 1 default profile: "default" 
+26/10/2025 10:36:19 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+26/10/2025 10:36:19 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+26/10/2025 10:36:22 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http) 
+26/10/2025 10:36:22 INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] 
+26/10/2025 10:36:22 INFO  o.a.c.c.StandardService - Starting service [Tomcat] 
+26/10/2025 10:36:22 INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46] 
+26/10/2025 10:36:22 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+26/10/2025 10:36:22 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3004 ms 
+26/10/2025 10:36:24 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+26/10/2025 10:36:24 INFO  o.s.b.a.e.w.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator' 
+26/10/2025 10:36:24 INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] 
+26/10/2025 10:36:24 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/' 
+26/10/2025 10:36:24 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - Started OrderReceiveApplication in 6.05 seconds (process running for 7.186) 
+26/10/2025 10:36:26 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+26/10/2025 10:36:26 INFO  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+26/10/2025 10:36:26 INFO  o.s.w.s.DispatcherServlet - Completed initialization in 3 ms 
+26/10/2025 10:36:43 INFO  o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+26/10/2025 10:36:43 INFO  o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+26/10/2025 10:37:02 INFO  o.h.v.i.u.Version - HV000001: Hibernate Validator 8.0.3.Final 
+26/10/2025 10:37:02 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - Starting OrderReceiveApplication using Java 17.0.16 with PID 8593 (/home/guntz/dev/projects/spring/desafio/guntz-desafio-loja/microservices/order-receive/target/classes started by guntz in /home/guntz/dev/projects/spring/desafio/guntz-desafio-loja) 
+26/10/2025 10:37:02 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - No active profile set, falling back to 1 default profile: "default" 
+26/10/2025 10:37:02 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+26/10/2025 10:37:02 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+26/10/2025 10:37:03 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http) 
+26/10/2025 10:37:03 INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] 
+26/10/2025 10:37:03 INFO  o.a.c.c.StandardService - Starting service [Tomcat] 
+26/10/2025 10:37:03 INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46] 
+26/10/2025 10:37:03 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+26/10/2025 10:37:03 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1625 ms 
+26/10/2025 10:37:04 WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server 
+26/10/2025 10:37:04 INFO  o.s.b.a.e.w.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator' 
+26/10/2025 10:37:04 INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] 
+26/10/2025 10:37:04 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/' 
+26/10/2025 10:37:04 INFO  b.c.g.d.l.o.r.OrderReceiveApplication - Started OrderReceiveApplication in 3.409 seconds (process running for 4.099) 
+26/10/2025 10:37:06 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+26/10/2025 10:37:06 INFO  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+26/10/2025 10:37:06 INFO  o.s.w.s.DispatcherServlet - Completed initialization in 1 ms 
+26/10/2025 10:37:13 INFO  b.c.g.d.l.o.r.a.c.OrderController - Order accepted: 0a8f7992-613c-4c38-b284-deb2b0cf2d34 
+26/10/2025 10:37:13 INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672] 
+26/10/2025 10:37:13 INFO  o.s.a.r.c.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#5528d174:0/SimpleConnection@3cbb56e2 [delegate=amqp://rabbitmq@127.0.0.1:5672/, localPort=45714] 
+26/10/2025 10:37:13 INFO  b.c.g.d.l.o.r.d.s.OrderProducerMessageService - Order 019a20bc-c496-7570-84b1-c62910558897 CREATED and inserted in exchange: order-processor.order-received-result.v1.e 
+26/10/2025 10:37:19 INFO  b.c.g.d.l.o.r.a.c.OrderController - Order accepted: 337b9a7c-8869-4f74-8627-1960a07c6981 
+26/10/2025 10:37:19 INFO  b.c.g.d.l.o.r.d.s.OrderProducerMessageService - Order 019a20bc-daa8-7802-9a56-bc056671aeff CREATED and inserted in exchange: order-processor.order-received-result.v1.e 
+26/10/2025 10:38:12 INFO  o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+26/10/2025 10:38:12 INFO  o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 

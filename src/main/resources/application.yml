@@ -5,7 +5,8 @@ server:
     include-stacktrace: never
 
 spring:
-  application.name: guntz-desafio-loja-order-receive
+  application:
+    name: guntz-desafio-loja-order-receive
 
 #RABBITMQ
   rabbitmq:
@@ -23,3 +24,23 @@ spring:
           multiplier: 2 # Multiplicador usado para aumentar o intervalo de espera entre as tentativas
           max-attempts: 3 # Define o número máximo de tentativas de processamento de uma mensagem
 
+management:
+  endpoints:
+    web:
+      # Expõe os endpoints essenciais via HTTP: health e prometheus
+      exposure:
+        include: health, prometheus
+  endpoint:
+    prometheus:
+      # Garante que o endpoint /actuator/prometheus esteja habilitado
+      enabled: true
+    health:
+      # Exibe mais detalhes no endpoint de saúde (útil para debug)
+      show-details: always
+  metrics:
+    export:
+      prometheus:
+        # Habilita a exportação das métricas.
+        enabled: true
+    tags:
+      application: ${spring.application.name}

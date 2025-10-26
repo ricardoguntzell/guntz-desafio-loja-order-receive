@@ -16,17 +16,12 @@ import java.util.UUID;
 @Setter(AccessLevel.PRIVATE)
 public class OrderItem {
 
-    @NotNull
     private UUID id;
 
-    @Valid
-    @NotNull
     private Product product;
 
-    @NotNull
     private BigDecimal price;
 
-    @NotNull
     private Integer quantity;
 
     private BigDecimal totalAmount;

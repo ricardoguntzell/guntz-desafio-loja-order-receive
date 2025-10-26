@@ -7,21 +7,20 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.stereotype.Service;
 
-import static br.com.guntz.desafio.loja.order.receive.infrastructure.rabbitmq.RabbitMQConfig.FONOUT_EXCHANGE_ORDER_RECEIVE_RECEIVED;
+import static br.com.guntz.desafio.loja.order.receive.infrastructure.rabbitmq.RabbitMQConfig.FONOUT_EXCHANGE_ORDER_PROCESSOR_RECEIVED;
 
 @RequiredArgsConstructor
 @Slf4j
 @Service
-public class OrderMessagingService {
+public class OrderProducerMessageService {
 
     private final RabbitTemplate rabbitTemplate;
 
     public void sendOrderToOrderProcessorService(@Valid OrderInputReceived orderInputReceived) {
-        orderInputReceived.updatedOrderToReceived();
         var routingKey = "";
 
-        rabbitTemplate.convertAndSend(FONOUT_EXCHANGE_ORDER_RECEIVE_RECEIVED, routingKey, orderInputReceived);
-        log.info("Order {} CREATED and inserted in exchange: {}", orderInputReceived.id(), FONOUT_EXCHANGE_ORDER_RECEIVE_RECEIVED);
+        rabbitTemplate.convertAndSend(FONOUT_EXCHANGE_ORDER_PROCESSOR_RECEIVED, routingKey, orderInputReceived);
+        log.info("Order {} CREATED and inserted in exchange: {}", orderInputReceived.id(), FONOUT_EXCHANGE_ORDER_PROCESSOR_RECEIVED);
     }
 
 }

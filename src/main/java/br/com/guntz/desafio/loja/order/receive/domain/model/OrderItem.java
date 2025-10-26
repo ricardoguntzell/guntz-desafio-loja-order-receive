@@ -1,6 +1,8 @@
 package br.com.guntz.desafio.loja.order.receive.domain.model;
 
 import br.com.guntz.desafio.loja.order.receive.common.IdGenerator;
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.NotNull;
 import lombok.AccessLevel;
 import lombok.Builder;
 import lombok.Getter;
@@ -14,11 +16,17 @@ import java.util.UUID;
 @Setter(AccessLevel.PRIVATE)
 public class OrderItem {
 
+    @NotNull
     private UUID id;
 
+    @Valid
+    @NotNull
     private Product product;
 
+    @NotNull
     private BigDecimal price;
+
+    @NotNull
     private Integer quantity;
 
     private BigDecimal totalAmount;

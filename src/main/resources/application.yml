@@ -1,9 +1,13 @@
 #SERVER
 server.port: '8080'
+server:
+  error:
+    include-stacktrace: never
 
 spring:
-  application.name: order-receive
-  #RABBITMQ
+  application.name: guntz-desafio-loja-order-receive
+
+#RABBITMQ
   rabbitmq:
     host: localhost
     port: 5672
@@ -11,13 +15,11 @@ spring:
     password: ${RABBITMQ_DEFAULT_PASS}
     listener:
       simple:
-        prefetch: 4
+        prefetch: 4 # Consumer de 4 mensagens da fila por vez e mantê-las em um buffer local
         retry:
           enabled: true
-          initial-interval: 10s
-          max-interval: 20s
-          multiplier: 2
-          max-attempts: 3
-server:
-  error:
-    include-stacktrace: never
+          initial-interval: 10s # Define o intervalo inicial de espera antes da primeira tentativa de retry
+          max-interval: 20s # Define o intervalo máximo de espera entre as tentativas
+          multiplier: 2 # Multiplicador usado para aumentar o intervalo de espera entre as tentativas
+          max-attempts: 3 # Define o número máximo de tentativas de processamento de uma mensagem
+

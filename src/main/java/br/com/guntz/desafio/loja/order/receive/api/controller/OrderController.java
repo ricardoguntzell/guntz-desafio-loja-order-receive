@@ -1,7 +1,10 @@
 package br.com.guntz.desafio.loja.order.receive.api.controller;
 
+import br.com.guntz.desafio.loja.order.receive.api.model.OrderInputCreated;
 import br.com.guntz.desafio.loja.order.receive.api.model.OrderInputReceived;
-import br.com.guntz.desafio.loja.order.receive.domain.service.OrderMessagingService;
+import br.com.guntz.desafio.loja.order.receive.common.IdGenerator;
+import br.com.guntz.desafio.loja.order.receive.domain.model.OrderStatus;
+import br.com.guntz.desafio.loja.order.receive.domain.service.OrderProducerMessageService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -18,15 +21,24 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api/orders")
 public class OrderController {
 
-    private final OrderMessagingService orderMessagingService;
+    private final OrderProducerMessageService orderProducerMessageService;
 
     @PostMapping
-    public ResponseEntity<Object> create(@Valid @RequestBody OrderInputReceived orderInputReceived) {
-        log.info("Order accepted: {}", orderInputReceived.id());
+    public ResponseEntity<Object> create(@Valid @RequestBody OrderInputCreated orderCreated) {
+        log.info("Order accepted: {}", orderCreated.idExternal());
 
-        orderMessagingService.sendOrderToOrderProcessorService(orderInputReceived);
+        OrderInputReceived orderReceived = convertOrderCreatedToOrderReceived(orderCreated);
+        orderProducerMessageService.sendOrderToOrderProcessorService(orderReceived);
 
         return ResponseEntity.status(HttpStatus.ACCEPTED).build();
     }
 
+    private OrderInputReceived convertOrderCreatedToOrderReceived(OrderInputCreated orderInputCreated) {
+        return new OrderInputReceived(
+                IdGenerator.generateTimeBasedUUID(),
+                orderInputCreated.idExternal(),
+                orderInputCreated.items(),
+                OrderStatus.RECEIVED
+        );
+    }
 }
